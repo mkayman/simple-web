@@ -1,0 +1,8 @@
+// Creates simple project, 'archetype' is plugin and 'generate' is goal
+mvn archetype:generate -DgroupId=com.mkayman.mvnbook -DartifactId=simple-web -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+
+// Starts jetty. To stop ctrl + C   (url: http://localhost:8080/simple-web/)
+mvn jetty:run
+
+// Test with curl
+curl localhost:8080/simple-web/simple
